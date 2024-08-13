@@ -1,9 +1,9 @@
 import express from 'express';
 import DBconncetion from './db.js';
 import Joke from './model.js';
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 
-dotenv.config() 
+// dotenv.config() 
 const app = express();
 
 app.use(express.json());

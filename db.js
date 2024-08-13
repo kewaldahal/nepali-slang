@@ -3,8 +3,7 @@ import mongoose from "mongoose";
 dotenv.config ()
 
 const DBconncetion = async () => {
-    // const MONGO_URI = process.env.MONGO_URI
-    const MONGO_URI = 'mongodb+srv://gmkabhosada:78ClqnkhUxz7PaXh@nepaligali.hzkbp.mongodb.net/'
+    const MONGO_URI = process.env.MONGO_URI
     try {
         await mongoose.connect(MONGO_URI);
         console.log('Database connected successfully');
